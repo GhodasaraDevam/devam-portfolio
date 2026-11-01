@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { Calendar } from 'lucide-react'
 import './Experience.css'
 
 const experiences = [
