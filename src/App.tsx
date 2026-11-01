@@ -1,87 +1,29 @@
-
-import Navbar from './components/Navbar'
+import LoadingScreen from './components/LoadingScreen'
+import CustomCursor from './components/CustomCursor'
+import Navigation from './components/Navigation'
+import ScrollProgress from './components/ScrollProgress'
 import Hero from './sections/Hero'
 import About from './sections/About'
-import Skills from './sections/Skills'
-import Projects from './sections/Projects'
+import Work from './sections/Work'
 import Experience from './sections/Experience'
-import Achievements from './sections/Achievements'
+import Skills from './sections/Skills'
 import Contact from './sections/Contact'
 
 function App() {
   return (
     <>
-      <Navbar />
-
+      <LoadingScreen />
+      <CustomCursor />
+      <ScrollProgress />
+      <Navigation />
       <main>
         <Hero />
-
         <About />
-
-        <Skills />
-
-        <Projects />
-
+        <Work />
         <Experience />
-
-        <Achievements />
-
+        <Skills />
         <Contact />
       </main>
-
-
-      <footer className="site-footer">
-        <div className="footer-main">
-          <div className="footer-brand">
-            <a className="brand" href="#home">
-              DEVAM<span>.</span>
-            </a>
-            <p>
-              Building thoughtful digital experiences
-              through code, creativity and curiosity.
-            </p>
-          </div>
-
-          <div className="footer-socials">
-            <span className="footer-label">CONNECT WITH ME</span>
-
-            <div className="footer-links">
-              <a
-                href="https://github.com/GhodasaraDevam"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub <span>↗</span>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/devam-ghodasara-86a676284"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn <span>↗</span>
-              </a>
-
-              <a href="mailto:devamghodasara20@gmail.com">
-                Email <span>↗</span>
-              </a>
-            </div>
-          </div>
-
-          <a className="back-to-top" href="#home">
-            Back to top <span>↑</span>
-          </a>
-        </div>
-
-        <div className="footer-bottom">
-          <span>
-            © {new Date().getFullYear()} Devam Ghodasara. All rights reserved.
-          </span>
-
-          <span>Designed & built with passion.</span>
-        </div>
-      </footer>
-
     </>
   )
 }

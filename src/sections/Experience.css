@@ -1,0 +1,161 @@
+.experience {
+  padding: 160px 0;
+  background: var(--bg-secondary);
+}
+
+.experience-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.experience-header {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.experience-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-accent);
+  letter-spacing: 2px;
+}
+
+.experience-title {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 700;
+  letter-spacing: -3px;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.timeline-period-box {
+  padding: 24px 32px;
+  background: var(--bg-accent);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-offset);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.timeline-period-box:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: var(--shadow-offset-hover);
+}
+
+.timeline-year {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.timeline-content {
+  padding: 40px;
+  background: var(--bg-primary);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-offset);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-content:hover {
+  transform: translate(-6px, -6px);
+  box-shadow: var(--shadow-offset-hover);
+  background: var(--bg-yellow);
+}
+
+.timeline-type {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--bg-coral);
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  background: var(--bg-primary);
+  border: var(--border-thin);
+}
+
+.timeline-role {
+  margin: 0 0 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+.timeline-company {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+
+.timeline-description {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .timeline-period-box {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 120px 0;
+  }
+
+  .experience-container {
+    padding: 0 24px;
+  }
+
+  .experience-header {
+    margin-bottom: 60px;
+  }
+
+  .timeline-content {
+    padding: 28px;
+  }
+
+  .timeline-role {
+    font-size: 24px;
+  }
+
+  .timeline-year {
+    font-size: 22px;
+  }
+}
