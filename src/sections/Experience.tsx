@@ -11,7 +11,7 @@ const experiences = [
   },
   {
     role: 'Computer Engineering Student',
-    company: 'Gujarat Technological University',
+    company: 'Charotar University of Science and Technology',
     period: '2022 - Present',
     type: 'Education',
     description: 'Studying core computer science concepts, building personal projects to apply theoretical knowledge, participating in coding competitions and hackathons. Maintaining strong academic performance (8.62 CGPA).',
